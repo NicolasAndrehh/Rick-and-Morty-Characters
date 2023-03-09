@@ -1,0 +1,10 @@
+$text-color: red;
+$bg-color: bisque;
+
+.hello {
+  color: $text-color;
+}
+
+body {
+  background-color: $bg-color;
+}
