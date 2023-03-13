@@ -151,6 +151,12 @@ You can deploy this project using:
 - Twitter: [@nicolasolaya22](https://twitter.com/nicolasolaya22)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/nicolas-andres-olaya-gamba-3b032b248/)
 
+👤 **John Njoroge**
+
+- GitHub: [@johnie261](https://github.com/johnie261)
+- Twitter: [@njorogejohni](https://twitter.com/njorogejohnie)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/john-njoroge-19b6a4245/)
+
 
 <p align="right"><a href="#readme-top">Back to top</a></p>
 
