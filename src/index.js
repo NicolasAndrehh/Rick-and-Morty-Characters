@@ -1,9 +1,7 @@
 import './style.scss';
-import headerLogoUrl from './img/headerImg.png';
+import { displayLogo, displayCharacters } from './modules/pageRenderer.js';
 
-const navbar = document.querySelector('.navbar');
-const headerLogo = document.createElement('img');
-headerLogo.src = headerLogoUrl;
-headerLogo.className = 'header-logo';
-
-navbar.insertAdjacentElement('afterbegin', headerLogo);
+document.addEventListener('DOMContentLoaded', () => {
+  displayLogo();
+  displayCharacters();
+});

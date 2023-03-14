@@ -7,6 +7,11 @@
   font-family: 'Lato', sans-serif;
 }
 
+.hide {
+  display: none !important;
+}
+
+// Navbar styles
 .navbar {
   display: flex;
   width: 100%;
@@ -26,11 +31,6 @@
     width: 50%;
     justify-content: space-evenly;
 
-    .landpage-link {
-      font-weight: bold;
-      text-decoration: underline;
-    }
-
     a {
       color: #fff;
       font-size: 1.25rem;
@@ -38,6 +38,64 @@
 
       &:hover {
         font-weight: bold;
+      }
+    }
+  }
+}
+
+main {
+  padding: 6rem 2rem 2rem 2rem;
+}
+
+// Characters section styles
+.characters-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding-top: 2rem;
+
+  // Character card styles
+  .character-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20rem;
+    padding: 2rem;
+    gap: 1rem;
+
+    img {
+      width: 15rem;
+      border-radius: 0.25rem;
+    }
+
+    .card-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1.1rem;
+      font-weight: bold;
+
+      .fa-heart {
+        cursor: pointer;
+      }
+    }
+
+    .button {
+      padding: 0.75rem;
+      width: 80%;
+      color: #000;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      border: 2px solid #000;
+      border-radius: 0.25rem;
+      transition: background-color 0.15s ease-in-out;
+
+      &:hover {
+        background-color: #000;
+        color: #fff;
       }
     }
   }
