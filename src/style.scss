@@ -1,10 +1,44 @@
-$text-color: red;
-$bg-color: bisque;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-.hello {
-  color: $text-color;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
 
-body {
-  background-color: $bg-color;
+.navbar {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  position: fixed;
+
+  .header-logo {
+    width: 4rem;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    justify-content: space-evenly;
+
+    .landpage-link {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    a {
+      color: #fff;
+      font-size: 1.25rem;
+      text-decoration: none;
+
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
 }
