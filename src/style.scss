@@ -11,6 +11,10 @@
   display: none !important;
 }
 
+body {
+  position: relative;
+}
+
 // Navbar styles
 .navbar {
   display: flex;
@@ -44,7 +48,7 @@
 }
 
 main {
-  padding: 6rem 2rem 2rem 2rem;
+  padding: 6rem 2rem;
 }
 
 // Characters section styles
