@@ -105,6 +105,40 @@ main {
   }
 }
 
+.popup-window {
+  position: fixed;
+  background-color: #d3d3d3;
+  top: 12%; left: 25%;
+  width: 50%;
+  border-radius: .5rem;
+  display: none;
+
+  .title-modal {
+    display: flex;
+    justify-content: end;
+    color: #f00;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  .image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .name {
+      font-size: 1.5rem;
+    }
+  }
+
+  .details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: .5rem;
+    text-align: center;
+  }
+}
+
 .footer {
   position: absolute;
   bottom: 0;
