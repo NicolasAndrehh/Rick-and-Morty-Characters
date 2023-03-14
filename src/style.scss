@@ -42,3 +42,18 @@
     }
   }
 }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  font-size: 1.5rem;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+
+  .dev {
+    color: #ff0000;
+  }
+}
