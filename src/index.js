@@ -1,14 +1,9 @@
-import _ from 'lodash';
 import './style.scss';
+import headerLogoUrl from './img/headerImg.png';
 
-function component() {
-  const element = document.createElement('div');
+const navbar = document.querySelector('.navbar');
+const headerLogo = document.createElement('img');
+headerLogo.src = headerLogoUrl;
+headerLogo.className = 'header-logo';
 
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
-
-  return element;
-}
-
-document.body.appendChild(component());
+navbar.insertAdjacentElement('afterbegin', headerLogo);
