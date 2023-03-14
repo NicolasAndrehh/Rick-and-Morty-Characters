@@ -5,8 +5,8 @@ const getCharacters = async (url) => {
       throw new Error(`Error: ${response.statusText}`);
     }
 
-    const characters = await response.json();
-    return characters;
+    const data = await response.json();
+    return data;
   } catch (error) {
     return error;
   }
