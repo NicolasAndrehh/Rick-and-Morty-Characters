@@ -1,5 +1,6 @@
 import headerLogoUrl from '../img/headerImg.png';
 import getCharacters from './fetchAPI.js';
+import { displayModal } from '../popup/modal.js';
 import InvolvementAPI from './involvementAPI.js';
 
 // Function to display the header logo
@@ -50,6 +51,12 @@ const displayCharacters = async () => {
                 <a href="#" class="button">Comments</a>
               </div>`;
         charactersSection.insertAdjacentHTML('beforeend', characterCard);
+
+        const commentBtn = document.querySelectorAll('.button');
+        commentBtn.forEach((item, index) => item.addEventListener('click', (e) => {
+          e.preventDefault();
+          displayModal(index + 1);
+        }));
       });
     });
 };
