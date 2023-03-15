@@ -157,7 +157,7 @@ main {
     justify-content: center;
     height: 8vh;
     text-align: center;
-    margin: .7rem;
+    margin: 0.7rem;
 
     .box {
       display: flex;
@@ -169,17 +169,17 @@ main {
     @include flexBox();
 
     .title {
-      padding-bottom: .7rem;
+      padding-bottom: 0.7rem;
     }
 
     .comment-container {
       background-color: #fff;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      padding: .5rem;
+      padding: 0.5rem;
       overflow-y: scroll;
       height: 15vh;
       width: 50%;
-      border-radius: .2rem;
+      border-radius: 0.2rem;
     }
   }
 
@@ -189,19 +189,19 @@ main {
     .inputBox {
       display: flex;
       flex-direction: column;
-      padding: .5rem;
+      padding: 0.5rem;
       gap: 1rem;
 
       .name {
         height: 4vh;
-        padding: .5rem;
-        border-radius: .3rem;
+        padding: 0.5rem;
+        border-radius: 0.3rem;
       }
 
       .text {
         resize: none;
-        padding: .5rem;
-        border-radius: .3rem;
+        padding: 0.5rem;
+        border-radius: 0.3rem;
       }
 
       .submit {
@@ -315,7 +315,6 @@ main {
           .submit {
             width: 110%;
           }
-
         }
       }
     }
