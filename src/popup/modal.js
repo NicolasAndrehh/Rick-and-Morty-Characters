@@ -1,5 +1,7 @@
 // import './api.js'
 import getCharacters from '../modules/fetchAPI.js';
+import InvolvementApi from './comment.js';
+import refresh from './commentDisplay.js';
 
 const modalContainer = document.querySelector('.popup-window');
 const overlay = document.querySelector('.overlay');
@@ -11,7 +13,6 @@ const displayModal = (id) => {
     .then((request) => {
       const charactersArray = request.results;
       charactersArray.forEach((character) => {
-        //  for (const character of charactersArray) {
         if (Number(id) === character.id) {
           modalContainer.style.display = 'flex';
           overlay.style.display = 'block';
@@ -31,13 +32,11 @@ const displayModal = (id) => {
             <div class="box"> Gender : ${character.gender} </div>
         </div>
         <div class="comment-box">
-          <h2 class="title"> Comments (2) </h2>
+          <h2 class="title"> Comments <span class="counter"> </span> </h2>
           <div class="comment-container">
-            <p> 15/03/2023 John: I'd love to buy it so much </p>
-            <p> 15/03/2023 John: I'd love to buy it </p>
           </div>
         </div>
-        <form action="#" class="inputComments">
+        <form action="#" class="inputComments" id="inputComments">
           <h2>Add a comment</h2>
           <div class="inputBox">
             <input class="name" type="text" placeholder="Your name" required>
@@ -48,7 +47,6 @@ const displayModal = (id) => {
           </div>
         </form>      
     `;
-
           modalContainer.innerHTML = html;
 
           // close modal
@@ -59,6 +57,13 @@ const displayModal = (id) => {
             modalContainer.style.display = 'none';
             overlay.style.display = 'none';
           });
+
+          const request = new InvolvementApi();
+          const displayData = async () => {
+            const data = await request.getComments();
+            refresh(data);
+          };
+          displayData();
         }
       });
     });
