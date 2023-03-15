@@ -73,7 +73,6 @@ const displayCharacters = async () => {
                 <div class="card-info">
                   <p>${character.name}</p>
                   <i class="fa-regular fa-heart fa-lg like-button" data-id="${character.id}"></i>
-                  <i class="fa-solid fa-heart fa-lg hide"></i>
                 </div>
                 <p class="character-likes"><span>${characterLikes}</span> likes</p>
                 <a href="#" class="button">Comments</a>
