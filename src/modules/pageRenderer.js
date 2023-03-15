@@ -36,7 +36,8 @@ const displayCharacters = () => {
         charactersSection.insertAdjacentHTML('beforeend', characterCard);
 
         const commentBtn = document.querySelectorAll('.button');
-        commentBtn.forEach((item, index) => item.addEventListener('click', () => {
+        commentBtn.forEach((item, index) => item.addEventListener('click', (e) => {
+          e.preventDefault();
           displayModal(index + 1);
         }));
       });

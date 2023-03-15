@@ -114,7 +114,7 @@ main {
 
 .popup-window {
   position: fixed;
-  background-color: #adadad;
+  background-color: #fff;
   top: 12%;
   left: 20%;
   width: 55%;
@@ -128,14 +128,12 @@ main {
   .title-modal {
     display: flex;
     justify-content: end;
-    color: #f00;
+    color: #000;
     font-size: 1.7rem;
     padding: 1rem;
 
     .fa-times {
-      &:hover {
-        color: #000;
-      }
+      cursor: pointer;
     }
   }
 
