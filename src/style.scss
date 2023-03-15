@@ -107,7 +107,7 @@ main {
 
 .popup-window {
   position: fixed;
-  background-color: #adadad;
+  background-color: #fff;
   top: 12%;
   left: 20%;
   width: 55%;
@@ -120,21 +120,21 @@ main {
   .title-modal {
     display: flex;
     justify-content: end;
-    color: #f00;
+    color: #000;
     font-size: 1.7rem;
     padding: 1rem;
+    cursor: pointer;
 
-    .fa-times {
-      &:hover {
-        color: #000;
-      }
-    }
   }
 
   .image {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    img{
+     border-radius: .25rem;
+    }
 
     .name {
       font-size: 1.5rem;
