@@ -11,6 +11,11 @@
   display: none !important;
 }
 
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
 body {
   position: relative;
   min-height: 100vh;
@@ -82,8 +87,12 @@ main {
       font-size: 1.1rem;
       font-weight: bold;
 
-      .fa-heart {
+      .like-button {
         cursor: pointer;
+
+        &:hover {
+          font-weight: bold;
+        }
       }
     }
 
@@ -124,7 +133,10 @@ main {
     color: #000;
     font-size: 1.7rem;
     padding: 1rem;
-    cursor: pointer;
+
+    i {
+      cursor: pointer;
+    }
   }
 
   .image {
