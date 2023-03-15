@@ -1,12 +1,13 @@
-class Api{
-    constructor() {
-      this.url = 'https://rickandmortyapi.com/api/character';
+/*
+ getCharacter = async (url) => {
+    try {
+      const response = await fetch(url);
+      const { results } = await response.json();
+      const charactersArray = results;
+      return charactersArray;
+    } catch (err) {
+      console.error(err);
+      return [];
     }
-  
-      getCharacter = async () => {
-        const { result } = await fetch(this.url).then((response) => response.json())
-          .catch((err) => new Error(err));
-        return result;
-    }
-  
-}
+  }
+*/

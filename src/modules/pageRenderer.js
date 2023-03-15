@@ -1,5 +1,6 @@
 import headerLogoUrl from '../img/headerImg.png';
 import getCharacters from './fetchAPI.js';
+import { displayModal } from '../popup/modal.js';
 
 // Funtion to display the header logo
 const displayLogo = () => {
@@ -33,6 +34,11 @@ const displayCharacters = () => {
         </div>`;
 
         charactersSection.insertAdjacentHTML('beforeend', characterCard);
+
+        const commentBtn = document.querySelectorAll('.button');
+        commentBtn.forEach((item, index) => item.addEventListener('click', () => {
+          displayModal(index + 1);
+        }));
       });
     });
 };
