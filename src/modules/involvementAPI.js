@@ -22,7 +22,7 @@ export default class InvolvementAPI {
       const response = await fetch(`${this.baseURL}apps/${this.appId}/likes`, {
         method: 'POST',
         body: JSON.stringify({
-          item_id: itemId,
+          item_id: Number(itemId),
         }),
         headers: {
           'Content-Type': 'application/json; charset=UTF-8',
@@ -31,6 +31,7 @@ export default class InvolvementAPI {
       if (!response.ok) {
         throw new Error(`Error: ${response.statusText}`);
       }
+      return response.ok;
     } catch (error) {
       throw new Error(`Error:${error}`);
     }
