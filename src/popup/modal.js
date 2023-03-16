@@ -1,6 +1,5 @@
-// import './api.js'
 import getCharacters from '../modules/fetchAPI.js';
-import InvolvementApi from './comment.js';
+import InvolvementAPI from '../modules/involvementAPI.js';
 import refresh from './commentDisplay.js';
 
 const modalContainer = document.querySelector('.popup-window');
@@ -58,7 +57,8 @@ const displayModal = (id) => {
             overlay.style.display = 'none';
           });
 
-          const request = new InvolvementApi();
+          //Dispaly comment of the selected popup
+          const request = new InvolvementAPI();
           const displayData = async () => {
             const data = await request.getComments(id);
             refresh(data);
