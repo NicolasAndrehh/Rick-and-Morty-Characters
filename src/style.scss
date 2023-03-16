@@ -16,6 +16,13 @@ body {
   min-height: 100vh;
 }
 
+@mixin flexBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
 // Navbar styles
 .navbar {
   display: flex;
@@ -117,6 +124,7 @@ main {
   display: none;
   flex-direction: column;
   z-index: 1;
+  overflow-y: scroll;
 
   .title-modal {
     display: flex;
@@ -124,7 +132,10 @@ main {
     color: #000;
     font-size: 1.7rem;
     padding: 1rem;
-    cursor: pointer;
+
+    .fa-times {
+      cursor: pointer;
+    }
   }
 
   .image {
@@ -149,10 +160,65 @@ main {
     justify-content: center;
     height: 8vh;
     text-align: center;
+    margin: 0.7rem;
 
     .box {
       display: flex;
       justify-content: start;
+    }
+  }
+
+  .comment-box {
+    @include flexBox();
+
+    .title {
+      padding-bottom: 0.7rem;
+    }
+
+    .comment-container {
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      padding: 0.5rem;
+      overflow-y: scroll;
+      height: 15vh;
+      width: 50%;
+      border-radius: 0.2rem;
+    }
+  }
+
+  .inputComments {
+    @include flexBox();
+
+    .inputBox {
+      display: flex;
+      flex-direction: column;
+      padding: 0.5rem;
+      gap: 1rem;
+
+      .nameInput {
+        height: 4vh;
+        padding: 0.5rem;
+        border-radius: 0.3rem;
+      }
+
+      .text {
+        resize: none;
+        padding: 0.5rem;
+        border-radius: 0.3rem;
+      }
+
+      .submit {
+        width: 27%;
+        height: 3vh;
+        box-shadow: 0.2rem 0.3rem 0.2rem #000;
+        border: #000;
+
+        &:hover {
+          background-color: #000;
+          color: #fff;
+          box-shadow: 0.2rem 0.3rem 0.2rem #fff;
+        }
+      }
     }
   }
 }
@@ -184,6 +250,16 @@ main {
   }
 }
 
+@media screen and (max-width: 999px) {
+  .popup-window {
+    .comment-box {
+      .comment-container {
+        width: 65%;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   .popup-window {
     top: 12%;
@@ -208,7 +284,7 @@ main {
       }
     }
 
-    .name {
+    .nameInput {
       font-size: 1rem;
     }
 
@@ -216,6 +292,34 @@ main {
       display: grid;
       grid-template-columns: 6rem 6rem;
       font-size: 0.8rem;
+    }
+
+    .comment-box {
+      .comment-container {
+        width: 85%;
+      }
+    }
+
+    .inputComments {
+      .inputBox {
+        display: flex;
+        align-items: center;
+
+        .nameInput {
+          width: 80%;
+        }
+
+        .text {
+          width: 80%;
+          height: 10vh;
+        }
+
+        .submit-btn {
+          .submit {
+            width: 110%;
+          }
+        }
+      }
     }
   }
 }
