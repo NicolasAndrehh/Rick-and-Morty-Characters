@@ -1,7 +1,9 @@
 const countComments = (comments) => {
- //   comments.forEach(() => {
-        return comments.length;
-   // })
-  }
-
-  export default countComments
+  let count = 0;
+  comments.forEach(() => {
+    count += 1;
+    // return comments.length;
+  });
+  return count;
+};
+export default countComments;
