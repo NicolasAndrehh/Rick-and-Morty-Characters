@@ -134,9 +134,7 @@ To run tests, run the following command:
 
 ### Deployment
 
-You can deploy this project using:
-
-- Check the [live demo](#🚀-live-demo) to see the project deployed
+-Deployed using GitHub pages
 
 <p align="right"><a href="#readme-top">Back to top</a></p>
 

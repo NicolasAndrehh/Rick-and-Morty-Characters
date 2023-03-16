@@ -50,7 +50,6 @@ const displayModal = (id) => {
 
           // close modal
           const ModalClose = document.querySelector('.fa-times');
-
           ModalClose.addEventListener('click', (e) => {
             e.preventDefault();
             modalContainer.style.display = 'none';
