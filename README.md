@@ -34,7 +34,7 @@
 # 📖 Rick and Morty Characters <a name="about-project"></a>
 
 
-**Rick and Morty Characters** is a project created as a Capstone project where you can get all the Rick and Morty characters through an API.
+**Rick and Morty Characters** Capstone project provides a complete database of characters from the show, accessed through the [Rick and morty API](https://rickandmortyapi.com). Users can interact with the characters by liking or commenting, creating an engaging and interactive experience.
 
 ## 🛠 Built With <a name="built-with"></a>
 
