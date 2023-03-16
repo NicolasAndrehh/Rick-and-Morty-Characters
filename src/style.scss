@@ -13,7 +13,8 @@
 
 .disabled {
   pointer-events: none;
-  opacity: 0.5;
+  color: #bd0000;
+  opacity: 0.4;
 }
 
 body {
@@ -92,6 +93,7 @@ main {
 
         &:hover {
           font-weight: bold;
+          color: #bd0000;
         }
       }
     }
