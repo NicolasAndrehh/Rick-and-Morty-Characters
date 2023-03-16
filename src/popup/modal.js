@@ -70,15 +70,9 @@ const displayModal = (id) => {
             const userName = document.querySelector('.nameInput');
             const userComment = document.querySelector('.text');
             const form = document.getElementById('inputComments');
-          //  const itemId = {
-           //   username: userName.value,
-             // comment: userComment.value,
-            //};
-          // addComments(id, userName.value, userComment.value);
-           // const id = e.target.id;
-           console.log(id)
-           console.log(userName.value)
-           console.log(userComment.value)
+            console.log(id)
+            console.log(userName.value)
+            console.log(userComment.value)
             await request.addComments(id, userName.value, userComment.value);
             form.reset();
             displayData(id);
