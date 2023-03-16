@@ -1,4 +1,5 @@
 import refresh from '../popup/commentDisplay.js';
+import { countComments } from '../popup/commentCounter.js';
 
 export default class InvolvementAPI {
   constructor() {
@@ -26,6 +27,7 @@ export default class InvolvementAPI {
     }
     const comments = await response.json();
     refresh(comments);
+    countComments(comments);
     return comments;
   }
 
