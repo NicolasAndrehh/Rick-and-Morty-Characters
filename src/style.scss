@@ -147,7 +147,7 @@ main {
       border-radius: 0.25rem;
     }
 
-    .name {
+    .nameInput {
       font-size: 1.5rem;
       padding: 1rem 0;
       font-weight: 600;
@@ -195,7 +195,7 @@ main {
       padding: 0.5rem;
       gap: 1rem;
 
-      .name {
+      .nameInput {
         height: 4vh;
         padding: 0.5rem;
         border-radius: 0.3rem;
@@ -284,7 +284,7 @@ main {
       }
     }
 
-    .name {
+    .nameInput {
       font-size: 1rem;
     }
 
@@ -305,7 +305,7 @@ main {
         display: flex;
         align-items: center;
 
-        .name {
+        .nameInput {
           width: 80%;
         }
 
