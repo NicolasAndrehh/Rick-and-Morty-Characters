@@ -13,6 +13,7 @@ const displayModal = (id) => {
       const charactersArray = request.results;
       charactersArray.forEach((character) => {
         if (Number(id) === character.id) {
+          document.body.style.overflow = 'hidden';
           modalContainer.style.display = 'flex';
           overlay.style.display = 'block';
           let html = '';
@@ -52,6 +53,7 @@ const displayModal = (id) => {
           const ModalClose = document.querySelector('.fa-times');
           ModalClose.addEventListener('click', (e) => {
             e.preventDefault();
+            document.body.style.overflow = '';
             modalContainer.style.display = 'none';
             overlay.style.display = 'none';
           });

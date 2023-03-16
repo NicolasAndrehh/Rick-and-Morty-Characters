@@ -3,6 +3,10 @@ export default async (comments) => {
   commentContainer.innerHTML = '';
   comments.forEach((element) => {
     commentContainer.innerHTML += `
-            <p class='Title'>${element.creation_date}. ${element.username}: ${element.comment}</p>`;
+                                <div class="comment-row">
+                                  <p class="username">${element.username}</p>
+                                  <p class="comment">${element.comment}</p>
+                                  <p class="date">${element.creation_date}</p>
+                                </div>`;
   });
 };
