@@ -57,7 +57,7 @@ const displayModal = (id) => {
             overlay.style.display = 'none';
           });
 
-          //Dispaly comment of the selected popup
+          // Dispaly comment of the selected popup
           const request = new InvolvementAPI();
           const displayData = async () => {
             const data = await request.getComments(id);
