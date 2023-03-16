@@ -15,14 +15,14 @@ const displayLogo = () => {
 
 // Function to get an array of the character's likes
 const involvementAPI = new InvolvementAPI();
-async function getCharacterLikes() {
+const getCharacterLikes = async () => {
   let array = [];
   await involvementAPI.getLikes()
     .then((result) => {
       array = result;
     });
   return array;
-}
+};
 
 function createEventListeners() {
   // Add like buttons event listener
