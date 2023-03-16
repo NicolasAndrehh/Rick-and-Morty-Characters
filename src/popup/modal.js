@@ -26,10 +26,10 @@ const displayModal = (id) => {
             <div class="name"> ${character.name} </div>
         </div>
         <div class="details">
-            <div class="box"> Status : ${character.status} </div>
-            <div class="box"> Species : ${character.species} </div>
-            <div class="box"> Type : ${character.type} </div>
-            <div class="box"> Gender : ${character.gender} </div>
+            <div class="box"><p><span class="bold">Status:</span> ${character.status}</p></div>
+            <div class="box"><p><span class="bold">Specie:</span> ${character.species}</p></div>
+            <div class="box"><p><span class="bold">Type:</span> ${character.type}</p></div>
+            <div class="box"><p><span class="bold">Gender:</span> ${character.gender}</p></div>
         </div>
         <div class="comment-box">
           <h2 class="title"> Comments <span class="counter"> </span> </h2>
