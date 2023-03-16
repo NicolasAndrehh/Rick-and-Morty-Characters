@@ -39,7 +39,7 @@ const displayModal = (id) => {
         <form action="#" class="inputComments" id="inputComments">
           <h2>Add a comment</h2>
           <div class="inputBox">
-            <input class="name" type="text" placeholder="Your name" required>
+            <input class="nameInput" type="text" placeholder="Your name" required>
             <textarea class="text" id="message" name="message" rows="8" cols="37" placeholder="Your insights" required></textarea>
             <div class="submit-btn">
               <button class="submit">Comment</button>
@@ -60,10 +60,29 @@ const displayModal = (id) => {
 
           const request = new InvolvementApi();
           const displayData = async () => {
-            const data = await request.getComments();
+            const data = await request.getComments(id);
             refresh(data);
           };
           displayData();
+
+          document.getElementById('inputComments').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const userName = document.querySelector('.nameInput');
+            const userComment = document.querySelector('.text');
+            const form = document.getElementById('inputComments');
+          //  const itemId = {
+           //   username: userName.value,
+             // comment: userComment.value,
+            //};
+          // addComments(id, userName.value, userComment.value);
+           // const id = e.target.id;
+           console.log(id)
+           console.log(userName.value)
+           console.log(userComment.value)
+            await request.addComments(id, userName.value, userComment.value);
+            form.reset();
+            displayData(id);
+          });
         }
       });
     });
