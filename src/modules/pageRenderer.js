@@ -2,6 +2,7 @@ import headerLogoUrl from '../img/headerImg.png';
 import getCharacters from './fetchAPI.js';
 import { displayModal } from '../popup/modal.js';
 import InvolvementAPI from './involvementAPI.js';
+import itemsCounter from './itemsCounter.js';
 
 // Function to display the header logo
 const displayLogo = () => {
@@ -79,6 +80,8 @@ const displayCharacters = async () => {
               </div>`;
         charactersSection.insertAdjacentHTML('beforeend', characterCard);
       });
+
+      itemsCounter();
 
       createEventListeners();
     });
