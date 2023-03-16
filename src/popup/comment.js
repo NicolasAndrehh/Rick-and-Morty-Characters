@@ -1,21 +1,21 @@
-
-import refresh from './commentDisplay'
+import refresh from './commentDisplay.js';
 
 export default class InvolvementApi {
   constructor() {
     this.baseURL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/';
     this.appId = 'hWosAqiVeXtujgpmRoG5';
   }
+
   async getComments(id) {
     const response = await fetch(`${this.baseURL}apps/${this.appId}/comments?item_id=${id}`);
-     if (!response.ok) {
-      console.log(response)
+    if (!response.ok) {
       throw new Error(`Error: ${response.statusText}`);
     }
     const comments = await response.json();
-    refresh(comments)
+    refresh(comments);
     return comments;
   }
+
   async addComments(id, user, usercomment) {
     try {
       const response = await fetch(`${this.baseURL}apps/${this.appId}/comments`, {
@@ -32,7 +32,6 @@ export default class InvolvementApi {
       if (!response.ok) {
         throw new Error(`Error: ${response.statusText}`);
       }
-      console.log(response.ok)
       return response.ok;
     } catch (error) {
       throw new Error(`Error:${error}`);
