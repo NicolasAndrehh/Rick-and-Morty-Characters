@@ -36,6 +36,9 @@
 
 **Rick and Morty Characters** Capstone project provides a complete database of characters from the show, accessed through the [Rick and morty API](https://rickandmortyapi.com). Users can interact with the characters by liking or commenting, creating an engaging and interactive experience.
 
+#### Video Showing Features
+May you would like to watch our [video showing the principal features of the project](https://drive.google.com/file/d/1tg7qs6Bk1DlF2z09FluGnwta8jVcxTcx/view?usp=sharing) 
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
