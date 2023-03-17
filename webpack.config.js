@@ -30,6 +30,13 @@ module.exports = {
         test: /\.svg$/,
         use: 'svg-inline-loader',
       },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'img/[name][ext]',
+        },
+      },
     ],
   },
   target: 'web',

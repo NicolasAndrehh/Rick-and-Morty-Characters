@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h1><b>Webpack</b></h1>
+  <h1><b>Rick and Morty Characters - JavaScript Group Capstone</b></h1>
 
 </div>
 
@@ -31,10 +31,13 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Webpack <a name="about-project"></a>
+# 📖 Rick and Morty Characters <a name="about-project"></a>
 
 
-**Webpack** project is about setting up a webpack boilerplate.
+**Rick and Morty Characters** Capstone project provides a complete database of characters from the show, accessed through the [Rick and morty API](https://rickandmortyapi.com). Users can interact with the characters by liking or commenting, creating an engaging and interactive experience.
+
+#### Video Showing Features
+May you would like to watch our [video showing the principal features of the project](https://drive.google.com/file/d/1tg7qs6Bk1DlF2z09FluGnwta8jVcxTcx/view?usp=sharing) 
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -69,9 +72,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-
 - **[This project use Webpack]**
 - **[This project does a correct use of GitHub Flows]**
+- **[This project use the Rick and Morty API]**
 
 <p align="right"><a href="#readme-top">Back to top</a></p>
 
@@ -79,7 +82,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Webpack - Live Demo](https://nicolasandrehh.github.io/webpack/)
+[JavaScript Group Capstone - Live Demo](https://nicolasandrehh.github.io/JavaScript-Group-Capstone/)
 
 <p align="right"><a href="#readme-top">Back to top</a></p>
 
@@ -107,7 +110,8 @@ Example command:
 Clone this repository to your desired folder:
 
 ```sh
-  git clone git@github.com:NicolasAndrehh/Webpack-Boilerplate.git
+  git clone git@github.com:NicolasAndrehh/JavaScript-Group-Capstone.git
+  cd JavaScript-Group-Capstone 
 ```
 
 ### Install
@@ -130,13 +134,13 @@ To run the project, execute the following command:
 
 To run tests, run the following command:
 
-- This project doesn't have tests
+```sh
+  npm test
+```
 
 ### Deployment
 
-You can deploy this project using:
-
-- Check the [live demo](#🚀-live-demo) to see the project deployed
+-Deployed using GitHub pages
 
 <p align="right"><a href="#readme-top">Back to top</a></p>
 
@@ -151,6 +155,12 @@ You can deploy this project using:
 - Twitter: [@nicolasolaya22](https://twitter.com/nicolasolaya22)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/nicolas-andres-olaya-gamba-3b032b248/)
 
+👤 **John Njoroge**
+
+- GitHub: [@johnie261](https://github.com/johnie261)
+- Twitter: [@njorogejohni](https://twitter.com/njorogejohnie)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/john-njoroge-19b6a4245/)
+
 
 <p align="right"><a href="#readme-top">Back to top</a></p>
 
@@ -159,6 +169,7 @@ You can deploy this project using:
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[Improve UI design]**
+- [ ] **[Add unit tests]**
 
 <p align="right"><a href="#readme-top">Back to top</a></p>
 
@@ -184,7 +195,7 @@ If you like this project you can give it a star!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thanks Microverse community.
+We would like to thanks Microverse community.
 
 <p align="right"><a href="#readme-top">Back to top</a></p>
 

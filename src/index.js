@@ -1,14 +1,8 @@
-import _ from 'lodash';
 import './style.scss';
+import './popup/modal.js';
+import { displayLogo, displayCharacters } from './modules/pageRenderer.js';
 
-function component() {
-  const element = document.createElement('div');
-
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
-
-  return element;
-}
-
-document.body.appendChild(component());
+document.addEventListener('DOMContentLoaded', () => {
+  displayLogo();
+  displayCharacters();
+});
