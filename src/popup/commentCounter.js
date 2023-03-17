@@ -1,7 +1,16 @@
-export const countComments = async (comments) => {
+export const countComments = async () => {
   const commentCounter = document.querySelector('.counter');
-  const displayCount = await comments.length;
-  comments.forEach(() => {
-    commentCounter.innerHTML = `(${displayCount})`;
-  });
+  const comments = document.querySelectorAll('.comment-row');
+  let count;
+
+  if (comments.length === 0) {
+    count = 0;
+  } else {
+    count = 0;
+    comments.forEach(() => {
+      count += 1;
+    });
+  }
+
+  commentCounter.innerHTML = `(${count})`;
 };

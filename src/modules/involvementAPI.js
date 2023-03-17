@@ -27,7 +27,7 @@ export default class InvolvementAPI {
     }
     const comments = await response.json();
     refresh(comments);
-    countComments(comments);
+    countComments();
     return comments;
   }
 

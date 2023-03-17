@@ -6,6 +6,7 @@ const itemsCounter = () => {
   if (results.length === 0) {
     cont = 0;
   } else {
+    cont = 0;
     results.forEach(() => {
       cont += 1;
     });
